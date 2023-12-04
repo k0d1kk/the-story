@@ -1,0 +1,9 @@
+.github
+.next
+public
+coverage
+dist
+example
+node_modules
+.eslintrc.js
+.eslintcache
