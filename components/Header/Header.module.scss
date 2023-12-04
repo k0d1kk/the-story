@@ -1,0 +1,39 @@
+.nav {
+  @apply w-full;
+  @apply h-auto;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply py-3;
+  @apply bg-black;
+}
+
+.headerContainer {
+  @apply container;
+  @apply px-6;
+  @apply justify-center;
+  @apply items-center;
+  @apply flex;
+}
+
+.wrapper {
+  @apply w-full;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply flex-col;
+  @apply gap-5;
+}
+
+.ul {
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply gap-4;
+  @apply text-center;
+
+  li {
+    @apply text-xl;
+    @apply text-white;
+  }
+}
