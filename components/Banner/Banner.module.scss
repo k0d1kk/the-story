@@ -1,0 +1,52 @@
+.section {
+  @apply w-full;
+  @apply h-[200px];
+  @apply bg-cover;
+  background-image: url('/banner_sale.jpg');
+  @apply relative;
+}
+
+.blure {
+  @apply backdrop-blur-[2px];
+  @apply w-full;
+  @apply h-full;
+}
+
+.bannerContainer {
+  @apply container;
+  @apply px-6;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply text-center;
+}
+
+.wrapper {
+  @apply flex;
+  @apply justify-center;
+  @apply w-full;
+  @apply h-full;
+  @apply flex-col;
+  @apply py-3;
+  @apply gap-7;
+
+  h2 {
+    @apply text-2xl;
+    @apply bg-blue-300;
+    @apply bg-opacity-80;
+  }
+
+  h1 {
+    @apply bg-blue-300;
+    @apply text-2xl;
+    @apply font-bold;
+  }
+}
+
+.photo {
+  @apply w-full;
+  @apply h-[50px];
+  @apply absolute;
+  @apply -bottom-6;
+  @apply z-10;
+}

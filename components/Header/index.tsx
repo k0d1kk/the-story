@@ -4,6 +4,7 @@ import styles from './Header.module.scss';
 export default function Header() {
   return (
     <nav className={styles.nav}>
+      <img src="/foot_top2.png" alt="" className={styles.photo} />
       <div className={styles.headerContainer}>
         <div className={styles.wrapper}>
           <div className={styles.logo}>

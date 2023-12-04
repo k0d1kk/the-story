@@ -6,6 +6,7 @@
   @apply items-center;
   @apply py-3;
   @apply bg-black;
+  @apply relative;
 }
 
 .headerContainer {
@@ -36,4 +37,12 @@
     @apply text-xl;
     @apply text-white;
   }
+}
+
+.photo {
+  @apply w-full;
+  @apply h-[55px];
+  @apply absolute;
+  @apply -top-9;
+  @apply z-10;
 }
