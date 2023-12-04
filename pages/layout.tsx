@@ -1,3 +1,5 @@
+'use client';
+
 import './globals.scss';
 import type { Metadata } from 'next';
 import Head from 'next/head';
