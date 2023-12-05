@@ -1,0 +1,121 @@
+.section {
+  @apply w-full;
+  @apply h-auto;
+  background-image: url('bg_why.jpg');
+  @apply bg-cover;
+  @apply bg-no-repeat;
+  @apply relative;
+}
+
+.img {
+  @apply absolute;
+  @apply -top-7;
+  @apply w-full;
+  @apply h-[50px];
+  @apply z-30;
+}
+
+.black {
+  @apply w-full;
+  @apply h-full;
+  @apply backdrop-blur-sm;
+  @apply py-5;
+  @apply backdrop-brightness-50;
+}
+
+.whyContainer {
+  @apply container;
+  @apply px-6;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply text-center;
+}
+
+.wrapper {
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply items-center;
+  @apply w-full;
+}
+
+.title {
+  @apply text-white;
+  @apply text-3xl;
+  @apply text-center;
+  @apply items-center;
+  @apply flex;
+  @apply flex-col;
+  @apply font-semibold;
+  @apply mb-6;
+
+  span {
+    @apply text-green-500;
+    @apply font-bold;
+    @apply text-4xl;
+  }
+}
+
+.video {
+  @apply w-full;
+  @apply h-auto;
+  @apply border-solid;
+  @apply border-black;
+  @apply border-8;
+  @apply mb-[80px];
+
+  iframe {
+    @apply w-[100%];
+    @apply h-[300px];
+  }
+}
+
+.pluses {
+  @apply w-full;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply items-center;
+  @apply text-center;
+  @apply mb-8;
+  @apply gap-10;
+}
+
+.card {
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply items-center;
+  @apply text-center;
+  @apply w-[150px];
+
+  img {
+    @apply w-[75px];
+    @apply h-[75px];
+  }
+
+  p {
+    @apply text-lg;
+    @apply text-white;
+  }
+}
+
+.line {
+  @apply flex;
+  @apply justify-between;
+  @apply gap-6;
+}
+
+.button {
+  @apply w-auto;
+  @apply bg-green-500;
+  @apply text-black;
+  @apply flex;
+  @apply justify-center;
+  @apply text-center;
+  @apply py-2;
+  @apply px-3;
+  @apply text-xl;
+  @apply font-semibold;
+}
