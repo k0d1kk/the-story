@@ -1,0 +1,35 @@
+.section {
+  @apply w-full;
+  @apply h-auto;
+  @apply bg-black;
+  @apply py-4;
+}
+
+.footerContainer {
+  @apply container;
+  @apply px-6;
+  @apply py-4;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply text-center;
+}
+
+.wrapper {
+  @apply flex;
+  @apply justify-between;
+  @apply items-center;
+  @apply flex-col;
+  @apply gap-2;
+
+  p {
+    @apply text-white;
+    @apply text-lg;
+  }
+
+  a {
+    @apply text-orange-300;
+    @apply underline;
+    @apply hover:cursor-pointer;
+  }
+}

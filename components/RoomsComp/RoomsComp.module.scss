@@ -1,7 +1,6 @@
 .section {
   @apply w-full;
   @apply h-auto;
-  @apply mb-10;
   @apply relative;
   background-image: url('./bg.jpg');
   @apply bg-cover;
@@ -54,6 +53,16 @@
   }
 }
 
+.cards {
+  @apply w-full;
+  @apply h-full;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  @apply flex-col;
+  @apply gap-4;
+}
+
 .card1 {
   @apply w-[90%];
   @apply h-[200px];
@@ -73,6 +82,149 @@
     h2 {
       @apply text-3xl;
       transition: all 0.5s;
+      @apply mb-11;
+    }
+
+    .cardPrice {
+      @apply flex;
+      @apply ml-6;
+      animation: card-price 0.5s forwards;
+      @apply mb-3;
+
+      p {
+        @apply text-xl;
+      }
+
+      span {
+        @apply text-green-300;
+        @apply font-bold;
+        @apply text-lg;
+      }
+    }
+  }
+}
+
+.card2 {
+  @apply w-[90%];
+  @apply h-[200px];
+  background-image: url('2-1.jpg');
+  @apply bg-cover;
+  @apply justify-center;
+  @apply flex;
+  @apply items-center;
+
+  &:hover {
+    animation: bg-size-card 0.5s forwards;
+
+    .cardWrapper {
+      animation: card-border 0.5s forwards;
+    }
+
+    h2 {
+      @apply text-3xl;
+      transition: all 0.5s;
+      @apply mb-11;
+    }
+
+    .cardPrice {
+      @apply flex;
+      @apply ml-6;
+      animation: card-price 0.5s forwards;
+      @apply mb-3;
+
+      p {
+        @apply text-xl;
+      }
+
+      span {
+        @apply text-green-300;
+        @apply font-bold;
+        @apply text-lg;
+      }
+    }
+  }
+}
+
+.card3 {
+  @apply w-[90%];
+  @apply h-[200px];
+  background-image: url('3-1.jpg');
+  @apply bg-cover;
+  @apply justify-center;
+  @apply flex;
+  @apply items-center;
+
+  &:hover {
+    animation: bg-size-card 0.5s forwards;
+
+    .cardWrapper {
+      animation: card-border 0.5s forwards;
+    }
+
+    h2 {
+      @apply text-3xl;
+      transition: all 0.5s;
+      @apply mb-11;
+    }
+
+    .cardPrice {
+      @apply flex;
+      @apply ml-6;
+      animation: card-price 0.5s forwards;
+      @apply mb-3;
+
+      p {
+        @apply text-xl;
+      }
+
+      span {
+        @apply text-green-300;
+        @apply font-bold;
+        @apply text-lg;
+      }
+    }
+  }
+}
+
+.card4 {
+  @apply w-[90%];
+  @apply h-[200px];
+  background-image: url('4-1.jpg');
+  @apply bg-cover;
+  background-position-y: -300px;
+  @apply bg-no-repeat;
+  @apply justify-center;
+  @apply flex;
+  @apply items-center;
+
+  &:hover {
+    animation: bg-size-card 0.5s forwards;
+
+    .cardWrapper {
+      animation: card-border 0.5s forwards;
+    }
+
+    h2 {
+      @apply text-3xl;
+      transition: all 0.5s;
+      @apply mb-11;
+    }
+
+    .cardPrice {
+      @apply flex;
+      @apply ml-6;
+      animation: card-price 0.5s forwards;
+      @apply mb-3;
+
+      p {
+        @apply text-xl;
+      }
+
+      span {
+        @apply text-green-300;
+        @apply font-bold;
+        @apply text-lg;
+      }
     }
   }
 }
@@ -102,11 +254,24 @@
   @apply flex;
   @apply justify-center;
   @apply items-center;
+  @apply relative;
 
   h2 {
     @apply text-white;
     @apply text-2xl;
   }
+}
+
+.cardPrice {
+  @apply absolute;
+  @apply text-white;
+  @apply w-full;
+  @apply bottom-0;
+  @apply hidden;
+  @apply justify-start;
+  @apply flex-col;
+  @apply items-start;
+  @apply text-center;
 }
 
 @keyframes bg-size-card {
@@ -139,5 +304,23 @@
   }
   100% {
     border-width: 3px;
+  }
+}
+
+@keyframes card-price {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
   }
 }
