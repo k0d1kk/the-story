@@ -5,6 +5,7 @@ export default function Why() {
   return (
     <section className={styles.section}>
       <img src="foot_top2.png" className={styles.img} alt="" />
+      <img src="foot_top2.png" className={styles.img2} alt="" />
       <div className={styles.black}>
         <div className={styles.whyContainer}>
           <div className={styles.wrapper}>

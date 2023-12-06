@@ -5,11 +5,20 @@
   @apply bg-cover;
   @apply bg-no-repeat;
   @apply relative;
+  @apply mb-8;
 }
 
 .img {
   @apply absolute;
   @apply -top-7;
+  @apply w-full;
+  @apply h-[50px];
+  @apply z-30;
+}
+
+.img2 {
+  @apply absolute;
+  @apply -bottom-6;
   @apply w-full;
   @apply h-[50px];
   @apply z-30;
